@@ -1,0 +1,21 @@
+.header>img{
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+  }
+  .header>input{
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 7rem;
+  }
+  .container .header{
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+  }

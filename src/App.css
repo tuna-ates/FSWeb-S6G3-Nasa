@@ -37,19 +37,14 @@
   }
 } */
 
+
+
 .container{
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
 }
 
-.container .header{
-  background-color: aqua;
-  color: black;
-  border-bottom: 2px solid red;
-}
-.container .pageBody{
- background-color: blueviolet; 
- border-bottom: 2px solid red;
- flex-grow: 1;
-}
+
+

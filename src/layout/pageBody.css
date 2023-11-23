@@ -1,0 +1,41 @@
+
+.container .pageBody{
+ 
+    border-bottom: 2px solid red;
+    flex-grow: 1;
+    height: auto;
+    flex-wrap: wrap;
+    margin:5rem 20rem ;
+    border: 2px solid white;
+    border-radius: 2rem;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    padding: 1rem 0;
+   
+   }
+   .container .pageBody .title{
+     text-align: center;
+   }
+   .images{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+   }
+   .images>img{
+     width: 50%;
+     height: 70%;
+     border-radius: 4rem;
+     border: 2px solid red;
+   }
+   
+   .pageBody .dateAndcopyright{
+     display: flex;
+     justify-content: space-between;
+     margin: 2rem 3rem;
+     font-size: large;
+   }
+   .pageBody .explanation{
+     margin: 3rem ;
+     font-size: large;
+   }

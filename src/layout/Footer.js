@@ -1,8 +1,8 @@
-
+import "./Footer.css"
 
 const Footer=()=>{
     return <div className="footer">
-   <h1>Burası footer</h1>
+   <p>Copyright@2023</p>
     </div>
   }
   export default Footer;
