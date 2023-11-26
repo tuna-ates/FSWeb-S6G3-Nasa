@@ -28,6 +28,18 @@
      border-radius: 4rem;
      border: 2px solid red;
    }
+   .videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+   }
+   
+   .videos>iframe{
+    width: 50%;
+    height: 100%;
+     border: 2px solid red;
+   }
    
    .pageBody .dateAndcopyright{
      display: flex;

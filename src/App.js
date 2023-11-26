@@ -4,18 +4,22 @@ import Main from "./layout/Main";
 import axios from "axios";
 import SahteVeri from "./Sahte_veri";
 function App() {
+  const dateNow=new Date();
   const [data,setData]=useState(SahteVeri);
-  // useEffect(()=>{
-  //  axios.get("https://api.nasa.gov/planetary/apod?api_key=3fLdxkWL6qRPZYfFs3QAzAvrEcLJf0ZQdOdQqLxw")
-  // .then((resolve)=>{
-  //  console.log("sonuç:",resolve.data);
-  //  setData(resolve.data);
-  // })
-  // },[])
+  const [date,setDate]=useState(dateNow.toISOString().slice(0,10));
+  
+   useEffect(()=>{
+    setData(null);
+    axios.get(`https:api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`)
+   .then((resolve)=>{
+    console.log("sonuç:",resolve.data);
+    setData(resolve.data);
+   })
+   },[date])
  console.log(data);
   return (
     <div className="App">
-       <Main data={data}/>
+    {data?<Main date={date} setDate={setDate} data={data}/>:<p>Loading...</p>}
     </div>
   );
 }
