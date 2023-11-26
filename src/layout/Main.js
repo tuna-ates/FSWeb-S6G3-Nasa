@@ -3,10 +3,10 @@ import PageBody from "./PageBody";
 import Footer from "./Footer";
 
 const Main = (prop) => {
-  const {data,date,setDate}=prop;
+  const {data,date,setDate,setRandom}=prop;
   return (
-    <div className="container">
-      <Header date={date} setDate={setDate} />
+   data&& <div className="container">
+      <Header setRandom={setRandom} date={date} setDate={setDate} />
       <PageBody data={data} />
       <Footer />
     </div>

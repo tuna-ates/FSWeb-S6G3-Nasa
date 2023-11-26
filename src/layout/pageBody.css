@@ -41,13 +41,13 @@
      border: 2px solid red;
    }
    
-   .pageBody .dateAndcopyright{
+    .dateAndcopyright{
      display: flex;
      justify-content: space-between;
      margin: 2rem 3rem;
      font-size: large;
    }
-   .pageBody .explanation{
+    .explanation{
      margin: 3rem ;
      font-size: large;
    }
